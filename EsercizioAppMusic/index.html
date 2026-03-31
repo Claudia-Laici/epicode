@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Music</title>
+</head>
+
+<body>
+    <h1>App Music</h1>
+    <p>Benvenuto nella tua app musicale! Qui puoi ascoltare le tue canzoni preferite, creare playlist personalizzate e
+        scoprire nuova musica. Esplora la nostra vasta libreria musicale e goditi un'esperienza di ascolto unica.</p>
+    <form onsubmit="alert('Registrazione inviata')">
+        <div>
+            <input type="text" placeholder="nome" />
+        </div>
+        <br>
+        <div>
+            <input type="text" placeholder="cognome" />
+        </div>
+        <br>
+        <div>
+            <input type="email" placeholder="email" />
+        </div>
+        <br>
+        <div>
+            <input type="password" placeholder="inserisci la tua password" />
+        </div>
+        <br>
+        <div>
+            <h2>Data di nascita</h2>
+            <input type="date" />
+        </div>
+        <div>
+            <h2>Numero di telefono</h2>
+            <input type="number" />
+        </div>
+        <div>
+            <h2>Genere musicale preferito</h2>
+            <input type="checkbox" id="rock" name="rock" value="rock" />
+            <label for="rock">Rock</label>
+        </div>
+        <div>
+            <input type="checkbox" id="pop" name="pop" value="pop" />
+            <label for="pop">Pop</label>
+        </div>
+        <div>
+            <input type="checkbox" id="classic" name="classic" value="classic" />
+            <label for="classic">Classica</label>
+        </div>
+        <div>
+            <input type="checkbox" id="jazz" name="jazz" value="jazz" />
+            <label for="jazz">Jazz</label>
+        </div>
+        <div>
+            <input type="checkbox" id="hiphop" name="hiphop" value="hiphop" />
+            <label for="hiphop">Hip Hop</label>
+        </div>
+        <div>
+            <h2>Accettazione termini e condizioni</h2>
+            <input type="radio" id="accetto termini" name="termini" value="accetto" />
+            <label for="accetto termini">Accetto i termini e le condizioni</label>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Invia Registrazione</button>
+        </div>
+    </form>
+</body>
+
+</html>

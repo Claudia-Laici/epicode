@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  display: flex;
+  margin: 0;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+#main {
+  width: 100%;
+}
+
+#content {
+  height: 85%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em 2em;
+  padding: 1.5em 3em;
+}
+
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-icon {
+  padding: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.sidebar-icon p {
+  margin: 0;
+}
+
+.sidebar-icon ion-icon {
+  font-size: 1.5em;
+}
+
+#topbar {
+  height: 8vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  height: 30%;
+}
+
+#search-wrapper {
+  display: flex;
+  height: 30%;
+}
+
+#topbar-icons {
+  display: flex;
+}
+
+.topbar-icon ion-icon {
+  font-size: 2em;
+  padding: 0 0.3em;
+}
+
+#mic-icon {
+  margin: 0 0.5em;
+}
+
+#mic-icon ion-icon {
+  font-size: 1.7em;
+}
+
+#search-btn {
+  padding: 0 0.6em;
+  font-size: 1.3em;
+  display: flex;
+  align-items: center;
+}
+
+.video-card {
+  width: 100%;
+  height: 50%;
+}
+
+.video-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.logo-info {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 0.7em;
+}
+
+.channel-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.text-info {
+  margin-left: 0.8em;
+}
+
+.text-info h3 {
+  margin: 0;
+}
+
+.text-info p {
+  margin: 0.2em 0 0 0;
+  color: #606060;
+}

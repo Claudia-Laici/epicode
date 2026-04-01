@@ -1,0 +1,210 @@
+h1 {
+  font-family: "Prata", serif;
+  font-size: 64px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Prata", serif;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 0;
+  letter-spacing: 0.08em;
+  color: #888;
+  text-align: center;
+}
+
+h1,
+h3 {
+  margin-bottom: 0;
+}
+
+h6 {
+  padding: 22px;
+  margin-bottom: 0;
+  margin-top: 56px;
+  font-size: 16px;
+  color: #ffffff;
+  text-align: center;
+  background-image: linear-gradient(to right, #a56f6b, #e8c5c2);
+  border-radius: 6px;
+}
+
+.baita-segantini h6 {
+  background-image: linear-gradient(to right, #ebc0b0, #3c4357);
+}
+
+.lago-nero h6 {
+  background-image: linear-gradient(to right, #3f4154, #c9a58f);
+}
+
+.tre-cime-di-lavaredo h6 {
+  background-image: linear-gradient(to right, #de19cb, #54045b);
+}
+
+.val-di-fumo h6 {
+  background-image: linear-gradient(to right, #a0af59, #003737);
+}
+
+.val-di-funes h6 {
+  background-image: linear-gradient(to right, #fca53b, #715e58);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0px;
+}
+
+.image-container {
+  background-image: url("https://www.ilovevaldinon.it/wp-content/uploads/2023/07/val-di-funes-alto-adige.jpg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 500px;
+  border-radius: 20px;
+  box-shadow: inset 0 -80px 60px -20px rgba(0, 0, 0, 0.25);
+}
+
+.baita-segantini .image-container {
+  background-image: url("https://primierohiking.com/wp-content/uploads/2023/04/Baita-Segantini-4.jpg");
+}
+
+.lago-nero .image-container {
+  background-image: url("https://t4.ftcdn.net/jpg/02/90/89/27/360_F_290892701_X7bnRchQntMEzwETewdM5mPbdX6Uv2GJ.jpg");
+}
+
+.tre-cime-di-lavaredo .image-container {
+  background-image: url("https://images.pexels.com/photos/18676423/pexels-photo-18676423/free-photo-of-tre-cime-di-lavaredo.jpeg");
+}
+
+.val-di-fumo .image-container {
+  background-image: url("https://www.babytrekking.it/wordpress/wp-content/uploads/2020/05/val-di-fumo-25.jpg");
+}
+
+.val-di-funes .image-container {
+  background-image: url("https://media-assets.vanityfair.it/photos/63fb46e52be53ffa1bba26e4/1:1/w_793,h_793,c_limit/GettyImages-1423123188.jpg");
+  background-position: top;
+}
+
+.main-section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+  padding-bottom: 40px;
+}
+
+.author a {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.author {
+  text-align: center;
+  font-size: 13px;
+  color: #999;
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+li {
+  padding: 6px 0px 6px 22px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+p {
+  line-height: 1.75;
+  color: #555;
+  max-width: 90ch;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 22px;
+  margin-top: 32px;
+}
+
+.related-places a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+  color: #a56f6b;
+}
+
+.related-places a:hover {
+  color: #cea5a2;
+}
+
+.baita-segantini .related-places a {
+  color: #ebc0b0;
+}
+
+.baita-segantini .related-places a:hover {
+  color: #3c4357;
+}
+
+.lago-nero .related-places a {
+  color: #3f4154;
+}
+
+.lago-nero .related-places a:hover {
+  color: #c9a58f;
+}
+
+.tre-cime-di-lavaredo .related-places a {
+  color: #de19cb;
+}
+
+.tre-cime-di-lavaredo .related-places a:hover {
+  color: #54045b;
+}
+
+.val-di-fumo .related-places a {
+  color: #a0af59;
+}
+
+.val-di-fumo .related-places a:hover {
+  color: #003737;
+}
+
+.val-di-funes .related-places a {
+  color: #fca53b;
+}
+
+.val-di-funes .related-places a:hover {
+  color: #715e58;
+}
+
+.active {
+  color: #999;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #201f1f;
+  color: #fff;
+  text-align: center;
+  padding: 16px;
+}
+
+footer a {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 12px;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-top: 8px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

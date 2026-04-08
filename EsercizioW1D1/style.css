@@ -71,8 +71,8 @@ p {
   margin-bottom: 20px;
 }
 
-.featured {
-  border-left: #f3d888 2px solid;
+.featured{
+  border-left: 2px solid #f3d888;
   padding-left: 20px;
 }
 

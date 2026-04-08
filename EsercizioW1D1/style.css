@@ -1,11 +1,11 @@
 body{
     background-color: #f0f0f0;
     margin: 0;
-    padding: 20px;
+    padding: 0;
 }
 
 main {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
@@ -13,7 +13,7 @@ main {
 
 header img {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
     max-width: 20%;
     height: auto;
     border-radius: 10px;
@@ -25,7 +25,13 @@ h1{
     text-align: center;
 }
 
-.part {
+h3 {
+    text-align: left;
+    padding: 10px 0 0 0;
+}
+
+.top-banner p {
+    width: 100%;
     font-size: 18px;
     color: #004752;
     text-align: center;
@@ -35,7 +41,7 @@ h1{
     border-top: 2px solid #f3d888;
 }
 
-p{
+p {
     font-size: 18px;
     line-height: 1.5;
     text-align: left;    
@@ -49,3 +55,42 @@ p{
     border-radius: 10px;
     box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
 }
+
+.author {
+    color: #979595;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured {
+border-left: #f3d888 2px solid;
+    padding-left: 20px;
+}
+
+.featured h2 {
+    color: #c53636;
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 0px;
+}
+
+a {
+    color: #207a86;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.recipe h2 {
+    text-align: left;
+    padding: 20px 0;
+    border-bottom: #addde3 1.5px solid;
+}
+
+ol li{
+    padding: 10px 0 0;
+}
+
+
+

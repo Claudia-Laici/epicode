@@ -1,101 +1,96 @@
-body{
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+body {
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
 }
 
 main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-header img {
-    display: block;
-    margin: 20px auto;
-    max-width: 250px;
-    height: auto;
-    border-radius: 10px;
+.logo {
+  display: block;
+  margin: 20px auto;
+  width: 250px;
 }
 
-h1{
-    color: #333;
-    font-size: 50px;
-    text-align: center;
+h1 {
+  color: #333;
+  font-size: 50px;
+  text-align: center;
 }
 
 h3 {
-    text-align: left;
-    padding: 10px 0 0 0;
+  text-align: left;
+  padding: 10px 0 0 0;
 }
 
 .top-banner p {
-    width: 100%;
-    font-size: 18px;
-    color: #004752;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 10px 0;
-    background-color: rgb(236, 233, 224);
-    border-top: 2px solid #f3d888;
+  width: 100%;
+  font-size: 18px;
+  color: #004752;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  background-color: rgb(236, 233, 224);
+  border-top: 2px solid #f3d888;
 }
 
 p {
-    font-size: 18px;
-    line-height: 1.5;
-    text-align: left;    
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
 }
 
 .img {
-    width: 100%;
-    height: 600px; 
-    overflow: visible;
-    border-radius: 10px;
+  width: 100%;
+  height: 600px;
+  overflow: visible;
+  border-radius: 10px;
 }
 
 .img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 8px 8px 10px rgba(8, 0, 0, 0.170);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 8px 8px 10px rgba(8, 0, 0, 0.17);
 }
 
 .author {
-    color: #979595;
-    font-size: 18px;
-    text-align: center;
-    margin-bottom: 20px;
+  color: #979595;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .featured {
-border-left: #f3d888 2px solid;
-    padding-left: 20px;
+  border-left: #f3d888 2px solid;
+  padding-left: 20px;
 }
 
 .featured h2 {
-    color: #c53636;
-    font-size: 20px;
-    text-align: left;
-    margin-bottom: 0px;
+  color: #c53636;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 0px;
 }
 
 a {
-    color: #207a86;
-    font-size: 18px;
-    text-align: left;
-    margin-bottom: 20px;
+  color: #207a86;
+  font-size: 18px;
+  text-align: left;
+  margin-bottom: 20px;
 }
 
 .recipe h2 {
-    padding: 20px 0 10px;
-    border-bottom: 1.5px solid #addde3;
+  padding: 20px 0 10px;
+  border-bottom: 1.5px solid #addde3;
 }
 
-ol li{
-    padding: 10px 0 0;
+ol li {
+  padding: 10px 0 0;
 }
-
-
-

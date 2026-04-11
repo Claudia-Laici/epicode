@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #eaeded;
+}
+
+header {
+  background-color: #222f3e;
+}
+
+main {
+  max-width: 98%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #fff;
+  padding: 20px;
+}
+
+.logo img {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+nav {
+  background-color: #354758;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+  padding: 10px;
+  margin-left: 15px;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bannerTitle {
+  color: #fff;
+  background-color: #f56600;
+  text-align: center;
+  padding: 10px;
+  margin: 30px 0;
+}
+
+.giftCard {
+  height: 200px;
+  background-color: #2f6e5f;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.giftCard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background-image: url("./assets/bg-image.png");
+  background-repeat: repeat;
+  background-size: auto 65%;
+  background-position: top left;
+}
+
+.giftCard::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  height: 100%;
+  background-image: url("./assets/bg-image.png");
+  background-repeat: repeat;
+  background-size: auto 65%;
+  background-position: top right;
+}
+
+.giftCard p {
+  font-weight: bold;
+  color: #fff;
+}
+
+.galleryItems {
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.imgItems {
+  margin-top: 50px;
+  margin-bottom: 20px;  
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}

@@ -97,20 +97,45 @@ nav {
 }
 
 .galleryItems {
+  margin-top: 30px;
   background-color: #fff;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin: 20px auto;
-  padding: 10px;
 }
 
 .imgItems {
-  margin-top: 50px;
-  margin-bottom: 20px;  
-  width: 300px;
-  height: auto;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.imgItems img {
+  margin-bottom: 20px;
+  width: 280px;
+  height: 350px;
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.galleryText {
+  display: flex;
+  padding: 10px;
+  text-align: left;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.galleryText h2{
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.shopNow {
+  font-size: 0.9rem;
+  text-decoration: none;
+  font-weight: bold;
+  color:#338a9b;
+  
 }

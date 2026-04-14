@@ -146,21 +146,34 @@ nav {
 
 .sectionExtragaming {
   background-color: #fff;
+  width: 600px;
+  height: 600px;
+  padding: 20px 50px;
+  text-align: center;
 }
 
-.imgExtragaming {
-  display: column;
+.grid {
+  display: grid;
+  gap: 10px;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.imgExtragaming img { 
-  width: 20%;
+.Item img{ 
+  width: 200px;
   height: 200px;
   object-fit: cover;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .sectionExtraTitle {
   text-align: center;
+  margin-bottom: 20px;
+}
+
+.grid p{
+  padding-left: 20px;
+  text-align: left;
 }
 
 .seeMore {
@@ -168,7 +181,8 @@ nav {
   text-decoration: none;
   display: flex;
   justify-content: left;
-  margin-top: 30px;
+  margin-top: 50px;
+  padding-left: 20px;
 }
 
 .galleryItemslarge {

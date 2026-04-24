@@ -36,9 +36,9 @@ REGOLE
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let num1 = 12;
-let num2 = 20;
-let somma = num1 + num2;
+const num1 = 12;
+const num2 = 20;
+const somma = num1 + num2;
 console.log(`Esercizio 3 - Somma: ${somma}`);
 
 /* ESERCIZIO 4
@@ -47,7 +47,7 @@ console.log(`Esercizio 3 - Somma: ${somma}`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let x = 12;
+const x = 12;
 console.log(`Esercizio 4 - x: ${x}`);
 
 /* ESERCIZIO 5
@@ -56,7 +56,7 @@ console.log(`Esercizio 4 - x: ${x}`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let name = "Claudia";
+const name = "Claudia";
 console.log(`Esercizio 5 - name: ${name}`);
 
 /* ESERCIZIO 6
@@ -65,7 +65,7 @@ console.log(`Esercizio 5 - name: ${name}`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let sottrazione = 4 - x;
+const sottrazione = 4 - x;
 console.log(`Esercizio 6 - Sottrazione: ${sottrazione}`);
 
 /* ESERCIZIO 7
@@ -77,10 +77,9 @@ console.log(`Esercizio 6 - Sottrazione: ${sottrazione}`);
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let name1 = "john";
-let name2 = "John";
+const name1 = "john";
+const name2 = "John";
 console.log(`Esercizio 7 - name1: ${name1}`);
 console.log(`Esercizio 7 - name2: ${name2}`);
-console.log(`Esercizio 7 - name1 == name2: ${name1 == name2}`);
 console.log(`Esercizio 7 - name1 === name2: ${name1 === name2}`);
-console.log(`Esercizio 7 - name1.toLowerCase() == name2.toLowerCase(): ${name1.toLowerCase() == name2.toLowerCase()}`);
+console.log(`Esercizio 7 - name1.toLowerCase() === name2.toLowerCase(): ${name1.toLowerCase() === name2.toLowerCase()}`);

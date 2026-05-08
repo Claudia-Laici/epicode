@@ -1,0 +1,9 @@
+.linkClass{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.imgClass{
+    visibility: hidden;
+}

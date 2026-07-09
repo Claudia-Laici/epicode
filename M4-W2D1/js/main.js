@@ -37,7 +37,6 @@ const createCards = (photos) => {
     })
 }
 
-
 searchBtn.addEventListener("click", () =>{
     const query = searchInput.value.trim()
 

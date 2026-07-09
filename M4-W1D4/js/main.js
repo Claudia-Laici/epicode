@@ -1,3 +1,7 @@
+const searchInput = document.getElementById("searchField")
+const searchBtn = document.getElementById("button-search")
+const resultsTitle = document.getElementById("resultsTitle")
+
 const albums = []
 
 function createCard(album, container) {
@@ -25,7 +29,7 @@ function createCard(album, container) {
   container.appendChild(col)
 }
 
-function searchAndRender(query, containerId) {
+/*function searchAndRender(query, containerId) {
   fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${query}`)
     .then((response) => response.json())
     .then((data) => {
@@ -43,7 +47,43 @@ function searchAndRender(query, containerId) {
 searchAndRender("eminem", "eminemSection")
 searchAndRender("metallica", "metallicaSection")
 searchAndRender("queen", "queenSection")
+*/
 
+const container = document.getElementById("searchSection")
+const searchArtist = (query, container) => {
+  fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${query}`)
+    .then((response) => response.json())
+
+    .then((data) => {
+      albums.length = 0
+      albums.push(...data.data)
+      renderAlbums(data.data, container)
+    })
+
+    .catch((e) => {
+      console.error("Error recovering albums:", e)
+    })
+}
+
+const renderAlbums = (albums, container) => {
+  albums.forEach((album) => {
+    createCard(album, container)
+  })
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  resultsTitle.textContent = "Eminem"
+  container.innerHTML = ""
+  searchArtist("eminem", container)
+})
+
+searchBtn.addEventListener("click", () => {
+  const query = searchInput.value.trim()
+  if (query === "") return
+  resultsTitle.textContent = "Search Results"
+  container.innerHTML = ""
+  searchArtist(query, container)
+})
 
 const btn = document.querySelector("#create-list")
 

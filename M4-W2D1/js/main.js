@@ -9,26 +9,34 @@ const searchImages = (query) => {
     },
   })
     .then((response) => response.json())
-    .then((data) => {
-      data.photos.forEach((photo) => {
-        const card = document.createElement("div")
 
-        card.className = "col-md-2 pb-5"
-
-        card.innerHTML = `  <div class="card h-100">
-        <img src="${photo.src.medium}" class="card-img-top " alt="${photo.alt}">
-        <div class = "card-body">
-            <h5 class = "card-title">${photo.photographer}</h5>
-            <p class = "card-text">${photo.alt}</p>
-        </div>
-    </div> 
-    `
-        gallery.appendChild(card)
-      })
+    .then(data => {
+        createCards(data.photos)
     })
 
     .catch((e) => console.log(e))
 }
+
+const createCards = (photos) => {
+    photos.forEach((photo) => {
+        const card = document.createElement("div")
+
+        card.className = "col-md-2 pb-5"
+
+        card.innerHTML = `
+            <div class="card h-100">
+                <img src="${photo.src.medium}" class="card-img-top" alt="${photo.alt}">
+                <div class="card-body">
+                    <h5 class="card-title">${photo.photographer}</h5>
+                    <p class="card-text">${photo.alt}</p>
+                </div>
+            </div>
+        `
+
+        gallery.appendChild(card)
+    })
+}
+
 
 searchBtn.addEventListener("click", () =>{
     const query = searchInput.value.trim()

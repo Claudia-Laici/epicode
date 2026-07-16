@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top border-bottom">
+            <div class="container">
+                <a class="navbar-brand fst-italic" href="#">
+                    Archivio
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav ms-auto me-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Catalogo</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Autori</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chi siamo</a>
+                        </li>
+                    </ul>
+
+                    <div class="d-flex">
+                        <input id="search-input" class="form-control me-2 rounded-pill" type="search"
+                            placeholder="Cerca titolo, autore...">
+
+                        <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="bi bi-bag-fill"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="pt-5">
+        <section class="hero-section py-3 mt-4">
+            <div class="container border-bottom">
+                <div class="d-flex flex-column flex-lg-row align-items-center gap-5">
+                    <div class="col pe-5" style="max-width:520px;">
+
+                        <span class="text-danger d-block mb-3 font-monospace">
+                            [ Il libro del mese ]
+                        </span>
+
+                        <h1 class="display-3 mb-4">
+                            L'eleganza del <span class="fst-italic">silenzio</span> editoriale
+                        </h1>
+
+                        <p class="text-muted fst-italic mb-5">
+                            Una selezione curata di prime edizioni e saggi contemporanei
+                            che celebrano la carta come oggetto di design e cultura.
+                        </p>
+
+                        <button class="btn btn-dark rounded-0 px-4 py-3">
+                            Esplora la collezione
+                        </button>
+                    </div>
+
+                    <div class="flex-shrink-0 mb-5">
+                        <img src="./assets/hero-book.jpg" alt = "hero image" class="img-fluid" width="600" height="800">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="nav-menu">
+            <div class="container border-bottom">
+
+                <div class="d-flex flex-nowrap overflow-auto gap-4 py-3 font-monospace mb-3">
+                    <a class="nav-link text-nowrap active" href="#">Tutti</a>
+                    <a class="nav-link text-nowrap" href="#">Classici Italiani</a>
+                    <a class="nav-link text-nowrap" href="#">Poesia Moderna</a>
+                    <a class="nav-link text-nowrap" href="#">Architettura</a>
+                    <a class="nav-link text-nowrap" href="#">Fotografia</a>
+                    <a class="nav-link text-nowrap" href="#">Filosofia</a>
+                    <a class="nav-link text-nowrap" href="#">Sci-fi</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="new-arrivals">
+            <div class="container mt-5">
+
+                <div class="mb-5 fst-italic">
+                    <h2>Nuovi Arrivi</h2>
+                </div>
+
+                <div class="row g-4" id="books-container">
+
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="bg-black text-white py-5 mt-5">
+        <div class="container">
+
+            <div class="row gy-5">
+
+
+                <div class="col-12 col-md-4">
+                    <h2 class="fst-italic mb-3">Archivio</h2>
+
+                    <p class="text-secondary mb-0">
+                        Una libreria digitale pensata per chi ama l'odore
+                        della carta e la precisione dei caratteri mobili.
+                    </p>
+                </div>
+
+
+                <div class="col-6 col-md-3 offset-md-1">
+                    <h3 class="text-uppercase small font-monospace mb-3">
+                        Informazioni
+                    </h3>
+
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-white">Spedizioni</a>
+                        </li>
+
+                        <li class="mb-2">
+                            <a href="#" class="text-decoration-none text-white">Contatti</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="text-decoration-none text-white">Manifesto</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="col-12 col-md-4">
+                    <h3 class="text-uppercase small font-monospace mb-3">
+                        Newsletter
+                    </h3>
+
+                    <div class="input-group border-bottom border-secondary pb-2">
+                        <input type="email" class="form-control bg-black border-0 text-white ps-0"
+                            placeholder="Indirizzo email">
+
+                        <button class="btn text-white">
+                            Iscriviti →
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+            <hr class="border-secondary my-5">
+
+
+            <div class="d-flex justify-content-between flex-wrap small text-secondary">
+
+                <span>© 2024 Archivio Bookstore Milano</span>
+
+                <span>P.IVA IT 01234567890</span>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="cartModalLabel">Il tuo carrello</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul id="cart-items-list" class="list-group list-group-flush">
+                    </ul>
+                    <p class="text-end fw-semibold mt-3 mb-0">
+                        Totale: <span id="cart-total">0 €</span>
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Continua
+                        acquisti</button>
+                    <button type="button" class="btn btn-dark">Procedi all'acquisto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
